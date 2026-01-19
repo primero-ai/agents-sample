@@ -1,0 +1,50 @@
+{
+  "name": "@",
+  "version": "1.0.0",
+  "description": "primero.ai - Agents starter repo.",
+  "license": "MIT",
+  "author": "primero.ai",
+  "type": "module",
+  "scripts": {
+    "with-env": "dotenv -e .env --",
+    "build": "tsc --project tsconfig.json",
+    "type-check": "tsc --noEmit --project tsconfig.json",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "worker": "pnpm with-env tsx examples/worker.ts",
+    "trigger-workflows": "pnpm with-env pnpm examples/trigger-workflows.ts",
+    "clean": "rm -rf node_modules dist"
+  },
+  "dependencies": {
+    "@temporalio/activity": "^1.13.1",
+    "@temporalio/client": "1.13.1",
+    "@temporalio/workflow": "1.13.1",
+    "@temporalio/worker": "1.13.1",
+    "@primero-ai/temporal-graph-tools": "1.0.2",
+    "@primero-ai/agents-helpers": "1.0.1",
+    "lodash": "^4.17.21",
+    "zod": "4.1.12"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.202",
+    "tsx": "^4.19.2",
+    "@eslint/js": "^9.37.0",
+    "dotenv": "^17.2.1",
+    "dotenv-cli": "^10.0.0",
+    "@ianvs/prettier-plugin-sort-imports": "^4.7.0",
+    "@types/node": "^24.8.0",
+    "esbuild": "^0.24.0",
+    "eslint": "^9.37.0",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import": "^2.32.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.7.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "module": "dist/src/index.js",
+  "packageManager": "pnpm@10.28.1"
+}
