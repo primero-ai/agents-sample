@@ -11,8 +11,8 @@
     "type-check": "tsc --noEmit --project tsconfig.json",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "worker": "pnpm with-env tsx examples/worker.ts",
-    "trigger-workflows": "pnpm with-env pnpm examples/trigger-workflows.ts",
+    "worker": "pnpm with-env tsx debug/worker.ts",
+    "trigger-workflows": "pnpm with-env tsx debug/trigger-workflows.ts",
     "clean": "rm -rf node_modules dist"
   },
   "dependencies": {
@@ -20,8 +20,8 @@
     "@temporalio/client": "1.13.1",
     "@temporalio/workflow": "1.13.1",
     "@temporalio/worker": "1.13.1",
-    "@primero-ai/temporal-graph-tools": "1.0.2",
-    "@primero-ai/agents-helpers": "1.0.1",
+    "@primero.ai/temporal-graph-tools": "1.0.0",
+    "@primero.ai/agents-helpers": "1.0.0",
     "lodash": "^4.17.21",
     "zod": "4.1.12"
   },
