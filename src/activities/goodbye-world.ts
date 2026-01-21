@@ -1,4 +1,4 @@
-import { createActivity } from '@primero-ai/temporal-graph-tools'
+import { createActivity } from '@primero.ai/temporal-graph-tools'
 
 export type GoodbyeWorldInput = { name: string }
 

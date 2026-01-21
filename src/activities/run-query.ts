@@ -1,5 +1,5 @@
-import { createActivity } from '@primero-ai/temporal-graph-tools'
-import { ResourceQueryClient } from '@primero-ai/agents-helpers'
+import { createActivity } from '@primero.ai/temporal-graph-tools'
+import { ResourceQueryClient } from '@primero.ai/agents-helpers'
 
 export type RunQueryInput = { name: string }
 

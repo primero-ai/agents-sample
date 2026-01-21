@@ -1,4 +1,4 @@
-import { createWorkflowBuilder } from '@primero-ai/temporal-graph-tools'
+import { createWorkflowBuilder } from '@primero.ai/temporal-graph-tools'
 import { goodbyeWorldActivity, helloWorldActivity, HelloWorldInput, niceToMeetYouActivity, runQueryActivity } from './activities'
 
 export const builderAgent = createWorkflowBuilder<HelloWorldInput>({

@@ -1,6 +1,6 @@
 # agents-sample
 
-Template repo for building a simple Temporal workflow using `@primero-ai/temporal-graph-tools`
+Template repo for building a simple Temporal workflow using `@primero.ai/temporal-graph-tools`
 and small example activities. Use this as a starting point for your own agent workflows.
 
 ## What's inside
@@ -39,7 +39,7 @@ src/
 4. Adjust dependencies in `package.json` as needed.
 
 ## Notes
-- The `run-query` activity uses `@primero-ai/agents-helpers` and expects your environment to
+- The `run-query` activity uses `@primero.ai/agents-helpers` and expects your environment to
   provide the required connection details (set via `.env` if needed).
 
 ## Requirements
